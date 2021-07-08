@@ -432,7 +432,7 @@ h6 {
 }
 
 #content .banner-block {
-    background: url(/images/banner.png) no-repeat center;
+    background: url(../images/banner.png) no-repeat center;
     background-size: cover;
     mix-blend-mode: multiply;
     position: relative;
@@ -534,7 +534,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(1) {
     width: 77px;
     height: 77px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 54%;
     left: -1%;
 }
@@ -546,7 +546,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(2) {
     width: 105px;
     height: 105px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 27%;
     left: 9%;
 }
@@ -558,7 +558,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(3) {
     width: 64px;
     height: 64px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 49%;
     left: 22%;
 }
@@ -570,7 +570,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(4) {
     width: 81px;
     height: 81px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 48%;
     right: 20%;
 }
@@ -582,7 +582,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(5) {
     width: 56px;
     height: 56px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 37%;
     right: 11%;
 }
@@ -594,7 +594,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(6) {
     width: 92px;
     height: 92px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 22%;
     right: -1%;
 }
@@ -606,7 +606,7 @@ h6 {
 #content .quote-block .images .block-img:nth-child(7) {
     width: 73px;
     height: 73px;
-    background: url(/images/face.png) center no-repeat;
+    background: url(../images/face.png) center no-repeat;
     top: 50%;
     right: 1%;
 }
