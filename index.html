@@ -13,8 +13,8 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -317,26 +317,81 @@
                 </div>
             </div>
             <div class="quote-text d-flex a-center j-c-between">
-                <button class="prev">
+                <button class="prev" onclick="moveRight()">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="18" cy="18" r="17.5" transform="rotate(-180 18 18)" fill="#F61067"
-                                stroke="#F61067"/>
-                        <path d="M12.3964 17.6464C12.2012 17.8417 12.2012 18.1583 12.3964 18.3536L15.5784 21.5355C15.7737 21.7308 16.0903 21.7308 16.2855 21.5355C16.4808 21.3403 16.4808 21.0237 16.2855 20.8284L13.4571 18L16.2855 15.1716C16.4808 14.9763 16.4808 14.6597 16.2855 14.4645C16.0903 14.2692 15.7737 14.2692 15.5784 14.4645L12.3964 17.6464ZM23.25 17.5H12.75V18.5H23.25V17.5Z"
-                              fill="white"/>
+                        <circle cx="18" cy="18" r="17.5" transform="rotate(-180 18 18)" />
+                        <path d="M12.3964 17.6464C12.2012 17.8417 12.2012 18.1583 12.3964 18.3536L15.5784 21.5355C15.7737 21.7308 16.0903 21.7308 16.2855 21.5355C16.4808 21.3403 16.4808 21.0237 16.2855 20.8284L13.4571 18L16.2855 15.1716C16.4808 14.9763 16.4808 14.6597 16.2855 14.4645C16.0903 14.2692 15.7737 14.2692 15.5784 14.4645L12.3964 17.6464ZM23.25 17.5H12.75V18.5H23.25V17.5Z"/>
                     </svg>
 
                 </button>
-                <div class="t-center">
-                    <div class="text quote-l w-65 w-m-85 m-auto">Lectus arcu bibendum at varius. Adipiscing diam donec
-                        adipiscing tristique.
-                    </div>
-                    <div class="author d-flex a-center j-c-center">
-                        <div class="name t-r-b">Kerry Johnes</div>
-                        <b> - </b>
-                        <div class="company"> Some Company</div>
+                <div class="t-center slide-wrapper">
+                    <div class="slide-container">
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="0">Lectus arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="1">2
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="2">3
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="3">4
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="4">5
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="5">6
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
+                        <div class="item-slide">
+                            <div class="text quote-l w-65 w-m-85 m-auto" data-id="5">7
+                            </div>
+                            <div class="author d-flex a-center j-c-center">
+                                <div class="name t-r-b">Kerry Johnes</div>
+                                <b> - </b>
+                                <div class="company"> Some Company</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="next">
+                <button class="next active" onclick="moveLeft()">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="18" cy="18" r="17.5" stroke="#F61067"/>
                         <path d="M23.6036 18.3536C23.7988 18.1583 23.7988 17.8417 23.6036 17.6464L20.4216 14.4645C20.2263 14.2692 19.9097 14.2692 19.7145 14.4645C19.5192 14.6597 19.5192 14.9763 19.7145 15.1716L22.5429 18L19.7145 20.8284C19.5192 21.0237 19.5192 21.3403 19.7145 21.5355C19.9097 21.7308 20.2263 21.7308 20.4216 21.5355L23.6036 18.3536ZM12.75 18.5H23.25V17.5H12.75V18.5Z"
@@ -403,21 +458,21 @@
                         <div class="nav-foot title-menu">CONTACT US</div>
                         <ul class="t-s contact">
                             <li class="item-menu"><a href="#" class="link-menu d-flex a-center">
-                                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.875 0H1.125C0.503906 0 0 0.503906 0 1.125V7.875C0 8.49609 0.503906 9 1.125 9H10.875C11.4961 9 12 8.49609 12 7.875V1.125C12 0.503906 11.4961 0 10.875 0ZM1.125 0.75H10.875C11.0813 0.75 11.25 0.91875 11.25 1.125V2.09531C10.7367 2.52891 10.0031 3.12656 7.72031 4.93828C7.32422 5.25234 6.54375 6.00938 6 6C5.45625 6.00938 4.67344 5.25234 4.27969 4.93828C1.99688 3.12656 1.26328 2.52891 0.75 2.09531V1.125C0.75 0.91875 0.91875 0.75 1.125 0.75ZM10.875 8.25H1.125C0.91875 8.25 0.75 8.08125 0.75 7.875V3.07031C1.28437 3.50859 2.12812 4.18594 3.81328 5.52422C4.29375 5.90859 5.14219 6.75469 6 6.75C6.85313 6.75703 7.69453 5.91797 8.18672 5.52422C9.87187 4.18594 10.7156 3.50859 11.25 3.07031V7.875C11.25 8.08125 11.0813 8.25 10.875 8.25Z"
-                                              fill="#FCFCFC"/>
-                                    </svg>
-                                    contact@lop.com
-                                </a></li>
+                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.875 0H1.125C0.503906 0 0 0.503906 0 1.125V7.875C0 8.49609 0.503906 9 1.125 9H10.875C11.4961 9 12 8.49609 12 7.875V1.125C12 0.503906 11.4961 0 10.875 0ZM1.125 0.75H10.875C11.0813 0.75 11.25 0.91875 11.25 1.125V2.09531C10.7367 2.52891 10.0031 3.12656 7.72031 4.93828C7.32422 5.25234 6.54375 6.00938 6 6C5.45625 6.00938 4.67344 5.25234 4.27969 4.93828C1.99688 3.12656 1.26328 2.52891 0.75 2.09531V1.125C0.75 0.91875 0.91875 0.75 1.125 0.75ZM10.875 8.25H1.125C0.91875 8.25 0.75 8.08125 0.75 7.875V3.07031C1.28437 3.50859 2.12812 4.18594 3.81328 5.52422C4.29375 5.90859 5.14219 6.75469 6 6.75C6.85313 6.75703 7.69453 5.91797 8.18672 5.52422C9.87187 4.18594 10.7156 3.50859 11.25 3.07031V7.875C11.25 8.08125 11.0813 8.25 10.875 8.25Z"
+                                          fill="#FCFCFC"/>
+                                </svg>
+                                contact@lop.com
+                            </a></li>
                             <li class="item-menu"><a href="#" class="link-menu d-flex a-center">
-                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.3 2.53125V8.85938H2.7V2.53125H6.3ZM7.65 0H1.35C0.604688 0 0 0.566895 0 1.26562V12.2344C0 12.9331 0.604688 13.5 1.35 13.5H7.65C8.39531 13.5 9 12.9331 9 12.2344V1.26562C9 0.566895 8.39531 0 7.65 0ZM1.35 12.6562C1.1025 12.6562 0.9 12.4664 0.9 12.2344V1.26562C0.9 1.03359 1.1025 0.84375 1.35 0.84375H7.65C7.8975 0.84375 8.1 1.03359 8.1 1.26562V12.2344C8.1 12.4664 7.8975 12.6562 7.65 12.6562H1.35ZM6.8625 1.6875H2.1375C1.95187 1.6875 1.8 1.82988 1.8 2.00391V9.38672C1.8 9.56074 1.95187 9.70312 2.1375 9.70312H6.8625C7.04812 9.70312 7.2 9.56074 7.2 9.38672V2.00391C7.2 1.82988 7.04812 1.6875 6.8625 1.6875ZM5.5125 10.9688H3.4875C3.30187 10.9688 3.15 11.1111 3.15 11.2852V11.4961C3.15 11.6701 3.30187 11.8125 3.4875 11.8125H5.5125C5.69812 11.8125 5.85 11.6701 5.85 11.4961V11.2852C5.85 11.1111 5.69812 10.9688 5.5125 10.9688Z"
-                                              fill="#FCFCFC"/>
-                                    </svg>
-                                    856 - 693 - 456
-                                </a>
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.3 2.53125V8.85938H2.7V2.53125H6.3ZM7.65 0H1.35C0.604688 0 0 0.566895 0 1.26562V12.2344C0 12.9331 0.604688 13.5 1.35 13.5H7.65C8.39531 13.5 9 12.9331 9 12.2344V1.26562C9 0.566895 8.39531 0 7.65 0ZM1.35 12.6562C1.1025 12.6562 0.9 12.4664 0.9 12.2344V1.26562C0.9 1.03359 1.1025 0.84375 1.35 0.84375H7.65C7.8975 0.84375 8.1 1.03359 8.1 1.26562V12.2344C8.1 12.4664 7.8975 12.6562 7.65 12.6562H1.35ZM6.8625 1.6875H2.1375C1.95187 1.6875 1.8 1.82988 1.8 2.00391V9.38672C1.8 9.56074 1.95187 9.70312 2.1375 9.70312H6.8625C7.04812 9.70312 7.2 9.56074 7.2 9.38672V2.00391C7.2 1.82988 7.04812 1.6875 6.8625 1.6875ZM5.5125 10.9688H3.4875C3.30187 10.9688 3.15 11.1111 3.15 11.2852V11.4961C3.15 11.6701 3.30187 11.8125 3.4875 11.8125H5.5125C5.69812 11.8125 5.85 11.6701 5.85 11.4961V11.2852C5.85 11.1111 5.69812 10.9688 5.5125 10.9688Z"
+                                          fill="#FCFCFC"/>
+                                </svg>
+                                856 - 693 - 456
+                            </a>
                             </li>
                         </ul>
                     </div>

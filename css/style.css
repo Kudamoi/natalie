@@ -20,7 +20,9 @@ a {
     display: block;
     text-decoration: none;
 }
-
+button:focus {
+    outline: none;
+}
 h1 {
     margin: 0;
     font-family: 'Mplus 1p', sans-serif;
@@ -629,7 +631,45 @@ h6 {
     height: 36px;
     cursor: pointer;
 }
+#content .quote-block .quote-text .slide-wrapper {
+    overflow: hidden;
+    width: 100%;
 
+    position: relative;
+}
+#content .quote-block .quote-text .slide-wrapper .slide-container {
+    display: flex;
+    transition: .2s;
+}
+#content .quote-block .quote-text .slide-wrapper .item-slide {
+    width: 100%;
+}
+#content .quote-block .quote-text .prev circle,
+#content .quote-block .quote-text .next circle {
+    fill: #F61067;
+    stroke: #F61067;
+}
+#content .quote-block .quote-text .prev path,
+#content .quote-block .quote-text .next path {
+    fill: white;
+}
+#content .quote-block .quote-text .prev,
+#content .quote-block .quote-text .next {
+    pointer-events: none;
+}
+#content .quote-block .quote-text .prev.active,
+#content .quote-block .quote-text .next.active {
+    pointer-events: auto;
+}
+#content .quote-block .quote-text .prev.active circle,
+#content .quote-block .quote-text .next.active circle {
+    fill: white;
+    stroke: #F61067;
+}
+#content .quote-block .quote-text .prev.active path,
+#content .quote-block .quote-text .next.active path {
+    fill: #F61067;
+}
 #content .quote-block .main-photo img {
     border-radius: 50%;
     max-width: 100%;
