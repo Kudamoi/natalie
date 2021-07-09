@@ -11,6 +11,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
   document.querySelector('#content .quote-block .quote-text .slide-wrapper .slide-container').setAttribute('data-id', 1)
 
 });
+window.addEventListener('resize', function(event) {
+    let w100 = document.querySelector('#content .quote-block .quote-text .slide-wrapper').offsetWidth;
+
+      let slides = document.querySelectorAll('#content .quote-block .quote-text .slide-wrapper .item-slide');
+      let fullSlider = 0;
+      for (let slide of slides) {
+          fullSlider += w100;
+        }
+        let dataID = Number(document.querySelector('#content .quote-block .quote-text .slide-wrapper .slide-container').getAttribute('data-id'));
+
+      document.querySelector('#content .quote-block .quote-text .slide-wrapper .slide-container').style.width = fullSlider + "px";
+      document.querySelector('#content .quote-block .quote-text .slide-wrapper .slide-container').style.marginLeft = -((dataID - 1) * document.querySelector('#content .quote-block .quote-text .slide-wrapper').offsetWidth) + 'px';
+}, true);
+
 function moveRight() {
 if(document.querySelector('#content .quote-block .quote-text .slide-wrapper .slide-container').getAttribute('data-id') > 0) {
 let prev = document.querySelector('#content .quote-block .quote-text .prev');
